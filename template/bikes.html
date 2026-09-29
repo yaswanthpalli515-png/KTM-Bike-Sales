@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>🏍️ Bikes</h1>
+
+<p class="welcome">
+    KTM Bike Inventory Management
+</p>
+
+<div class="table-container">
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Model Name</th>
+                <th>Category</th>
+                <th>Engine (CC)</th>
+                <th>Price</th>
+                <th>Stock</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            {% for bike in bikes %}
+
+            <tr>
+                <td>{{ bike[0] }}</td>
+                <td>{{ bike[1] }}</td>
+                <td>{{ bike[2] }}</td>
+                <td>{{ bike[3] }}</td>
+                <td>₹{{ bike[4] }}</td>
+                <td>{{ bike[5] }}</td>
+            </tr>
+
+            {% endfor %}
+
+        </tbody>
+
+    </table>
+
+</div>
+
+{% endblock %}

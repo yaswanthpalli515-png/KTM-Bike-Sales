@@ -1,0 +1,6 @@
+ktm_sales_management_backup.sql
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
