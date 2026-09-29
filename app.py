@@ -2,7 +2,7 @@ from flask import Flask, render_template_string, render_template
 import mysql.connector
 import os
 
-app = Flask(__name__)
+app = Flask(__name__,template_folder="template")
 
 
 # ============================================================
